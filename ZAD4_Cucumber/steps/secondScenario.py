@@ -45,7 +45,7 @@ def click_anime_subpage(context):
 @then('I should be on the correct subpage')
 def check_current_page(context):
     current_url = context.driver.current_url
-    expected_url = 'https://wkdzik.pl/'
+    expected_url = 'https://wkdzik.pl/suplementy-i-odzywianie'
 
     if current_url == expected_url:
         logger.info(f'Correct transfer to subpage = {current_url}')
